@@ -1,215 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
   <title>RM CHRONICLES | Author</title>
-  <link rel="stylesheet" href="style.css">
-	<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-/>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
 </head>
 <body>
   <header>
     <h1>RM CHRONICLES</h1>
-    <img src="assets/logo.png" alt="logo" class="logo" id="logo">
+    <img src="assets/logo.png" alt="logo" class="logo" id="logo" />
     <nav>
-  <a href="#cr7">Home</a>
-  <a href="#books">Books</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
-</nav>
+      <a href="#cr7">Home</a>
+      <a href="#books">Books</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <main>
-  
-  <section class="intro">
-    <h2>Welcome to My World of Words</h2>
-    <p>Explore my eBooks.</p>
-  </section>
-
-  <section class="books">
-	<section id="books">
-    <h2>My Books</h2>
-
-    <div class="book-card">
-      <a href="https://play.google.com/store/books/details?id=BOOK_ID_HERE" target="_blank" class="book-link">
-  <div class="book-card">
-    <img src="assets/book1-cover.jpg" alt="Whispers of the Moonlight">
-    <h3>Whispers of the Moonlight</h3>
-    <p>*Suspense • Dark Mystery*</p>
-    <div class="promo-code">
-      <p>Promo Code: <span class="code">RUP123FREE</span></p>
-    </div>
-  </div>
-</a>
-      
-    <div class="book-card">
-      <img src="assets/book2-cover.png" alt="book2-title">
-      <h3>If We Never Met</h3>
-      <p>COMING SOON!</p>
-      <p>*Emotional Thriller • Drama*</p>
-      <div class="promo-code">
-        <p>Promo Code: <span class="code">PQ0GXRAND88</span></p>
-      </div>
-    </div>
+    <section class="intro">
+      <h2>Welcome to My World of Words</h2>
+      <p>Explore my eBooks.</p>
     </section>
 
-<section class="about">
-	<section id="about">
-  <h2>About Me</h2>
-  <p>
-    I’m the creator behind RM Chronicles- where stories come alive through emotions, suspense, and drama. Whether you're into soft romance, science fiction or dark thrillers, I try to craft every story with heart and fire.
-  </p>
-  <p>
-    When I’m not writing, I’m dreaming up new characters, editing drafts, or vibing with music and midnight coffee (or maybe studying for college exams). I hope my writing brings joy to your boring life. Have a great day  :)
-  </p>
-</section>
+    <section id="books" class="books">
+      <h2>My Books</h2>
 
-<section class="contact">
-	<section id="contact">
-  <h2>Contact Me</h2>
-  <p>Got questions, feedback, or just wanna say hi? I will reply to every message. Fill out the form below!</p>
-  <form action="https://formspree.io/f/mldbaokj" method="POST">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message" rows="5" required></textarea>
-    <button type="submit">Send</button>
-  </form>
+      <a
+        href="https://play.google.com/store/books/details?id=BOOK_ID_HERE"
+        target="_blank"
+        class="book-link"
+      >
+        <div class="book-card">
+          <img src="assets/book1-cover.jpg" alt="Whispers of the Moonlight" />
+          <h3>Whispers of the Moonlight</h3>
+          <p>*Suspense • Dark Mystery*</p>
+          <div class="promo-code">
+            <p>Promo Code: <span class="code">RUP123FREE</span></p>
+          </div>
+        </div>
+      </a>
 
-<script>
-  document.getElementById("contactForm").addEventListener("submit", function (e) {
-    e.preventDefault();
-    
-    const form = e.target;
-    const data = {
-      name: form.name.value,
-      email: form.email.value,
-      message: form.message.value
-    };
+      <div class="book-card">
+        <img src="assets/book2-cover.png" alt="If We Never Met" />
+        <h3>If We Never Met</h3>
+        <p>COMING SOON!</p>
+        <p>*Emotional Thriller • Drama*</p>
+        <div class="promo-code">
+          <p>Promo Code: <span class="code">PQ0GXRAND88</span></p>
+        </div>
+      </div>
+    </section>
 
-    fetch("https://your-backend-or-form-service.url", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data)
-    })
-    .then(res => res.json())
-    .then(data => alert("Success!"))
-    .catch(err => alert("Error: " + err));
-  });
-</script>
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        I’m the creator behind RM Chronicles- where stories come alive through
+        emotions, suspense, and drama. Whether you're into soft romance,
+        science fiction or dark thrillers, I try to craft every story with
+        heart and fire.
+      </p>
+      <p>
+        When I’m not writing, I’m dreaming up new characters, editing drafts,
+        or vibing with music and midnight coffee (or maybe studying for college
+        exams). I hope my writing brings joy to your boring life. Have a great
+        day :)
+      </p>
+    </section>
 
-</section>
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <p>
+        Got questions, feedback, or just wanna say hi? I will reply to every
+        message. Fill out the form below!
+      </p>
+      <form
+        id="contactForm"
+        action="https://formspree.io/f/mldbaokj"
+        method="POST"
+      >
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          rows="5"
+          required
+        ></textarea>
+        <button type="submit">Send</button>
+      </form>
 
-<section class="testimonial-section">
-  <div class="testimonial-box">
-    <div class="testimonial active">
-       <p>“Absolutely great story! RM Chronicles knows how to stir emotions.”</p>
-      <span>– Riya Mondal</span>
+      <script>
+        document
+          .getElementById("contactForm")
+          .addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const data = {
+              name: form.name.value,
+              email: form.email.value,
+              message: form.message.value,
+            };
+
+            fetch("https://formspree.io/f/mldbaokj", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(data),
+            })
+              .then((response) => {
+                if (response.ok) {
+                  alert("Message sent successfully!");
+                  form.reset();
+                } else {
+                  return response.json().then((errData) => {
+                    throw new Error(errData.error || "Something went wrong");
+                  });
+                }
+              })
+              .catch((error) => alert("Error: " + error.message));
+          });
+      </script>
+    </section>
+
+    <section class="testimonial-section">
+      <div class="testimonial-box">
+        <div class="testimonial active">
+          <p>“Absolutely great story! RM Chronicles knows how to stir emotions.”</p>
+          <span>– Riya Mondal</span>
+        </div>
+        <div class="testimonial">
+          <p>“Couldn't put it down till 3AM. Keep writing, you're killing it!”</p>
+          <span>– A. Verma</span>
+        </div>
+        <div class="testimonial">
+          <p>“Boht badiya kahani hain”</p>
+          <span>– Diddy</span>
+        </div>
+        <div class="testimonial">
+          <p>“From soft romance to dark twists, this was a ride!”</p>
+          <span>– Nick</span>
+        </div>
+        <div class="testimonial">
+          <p>“Darun likhechis vai”</p>
+          <span>– KingYT</span>
+        </div>
+        <div class="testimonial">
+          <p>“Nice story bro”</p>
+          <span>– Aditya</span>
+        </div>
+        <div class="testimonial">
+          <p>“lekha ta next level er hoyacha”</p>
+          <span>– Sayantan Roy</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="insta-plug">
+      <p>
+        Follow me on
+        <a
+          href="https://www.instagram.com/rup_iz_nowhere?igsh=M3czcTUzbm1scXRo"
+          target="_blank"
+          ><i class="fab fa-instagram"></i> Instagram</a
+        >
+        for updates, sneak peeks, and all the behind-the-ink chaos.
+      </p>
     </div>
-    <div class="testimonial">
-      <p>“Couldn't put it down till 3AM. Keep writing, you're killing it!”</p>
-      <span>– A. Verma</span>
-    </div>
-	<div class="testimonial">
-      <p>“Boht badiya kahani hain”</p>
-      <span>– Diddy</span>
-    </div>
-    <div class="testimonial">
-      <p>“From soft romance to dark twists, this was a ride!”</p>
-      <span>– Nick</span>
-	</div>
-      <div class="testimonial">
-	<p>“Darun likhechis vai”</p>
-      <span>– KingYT</span>
-    </div>
-    <div class="testimonial">
-      <p>“Nice story bro”</p>
-      <span>– Aditya</span>
-    </div>
-    <div class="testimonial">
-      <p>“lekha ta next level er hoyacha”</p>
-      <span>– Sayantan Roy</span>
-    </div>
-  </div>
-</section>
 
-<div class="insta-plug">
-  <p>
-    Follow me on
-    <a href="https://www.instagram.com/rup_iz_nowhere?igsh=M3czcTUzbm1scXRo" target="_blank">
-      <i class="fab fa-instagram"></i> Instagram
-    </a>
-    for updates, sneak peeks, and all the behind-the-ink chaos.
-  </p>
-</div>
-
-<section class="about-section">
-  <h2>Author Note</h2>
-  <div class="about-text">
-    <p>Hi, I'm Rup. RM Chronicles is more than just stories- it’s where emotions bleed into words. Each book reflects shadows, light, love, heartbreak, and the chaos in between.</p>
-    <p>If you vibe with it, welcome home.</p>
-    </div>
-</section>
-
+    <section class="about-section">
+      <h2>Author Note</h2>
+      <div class="about-text">
+        <p>
+          Hi, I'm Rup. RM Chronicles is more than just stories- it’s where
+          emotions bleed into words. Each book reflects shadows, light, love,
+          heartbreak, and the chaos in between.
+        </p>
+        <p>If you vibe with it, welcome home.</p>
+      </div>
+    </section>
   </main>
 
-<aside class="testimonial-box">
-  <div class="testimonial">  <p>"These books are W." – BookLover69</p>
-</aside>
+  <aside class="testimonial-box">
+    <div class="testimonial">
+      <p>"These books are W." – BookLover69</p>
+    </div>
+  </aside>
 
   <footer>
     <p>&copy; 2025 RM CHRONICLES. All rights reserved.</p>
   </footer>
 
-<script>
-  const testimonials = document.querySelectorAll('.testimonial');
-  let index = 0;
+  <script>
+    const testimonials = document.querySelectorAll(".testimonial");
+    let index = 0;
 
-  setInterval(() => {
-    testimonials[index].classList.remove('active');
-    index = (index + 1) % testimonials.length;
-    testimonials[index].classList.add('active');
-  }, 4000);
-</script>
+    setInterval(() => {
+      testimonials[index].classList.remove("active");
+      index = (index + 1) % testimonials.length;
+      testimonials[index].classList.add("active");
+    }, 4000);
+  </script>
 
-	<a href="mailto:info.rmchronicles@gmail.com" class="floating-email">📧</a>
-	<a href="https://www.instagram.com/rup_iz_nowhere?igsh=M3czcTUzbm1scXRo" target="_blank" class="floating-instagram">
-  <i class="fab fa-instagram"></i>
-</a>
+  <a href="mailto:info.rmchronicles@gmail.com" class="floating-email">📧</a>
+  <a
+    href="https://www.instagram.com/rup_iz_nowhere?igsh=M3czcTUzbm1scXRo"
+    target="_blank"
+    class="floating-instagram"
+  >
+    <i class="fab fa-instagram"></i>
+  </a>
 
-<button id="scrollToTopBtn" title="Go to top">⬆️</button>
-	<script>
-const scrollBtn = document.getElementById('scrollToTopBtn');
+  <button id="scrollToTopBtn" title="Go to top">⬆️</button>
+  <script>
+    const scrollBtn = document.getElementById("scrollToTopBtn");
 
-// Show button after scrolling 200px down
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 200) {
-    scrollBtn.classList.add('show');
-  } else {
-    scrollBtn.classList.remove('show');
-  }
-});
+    // Show button after scrolling 200px down
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        scrollBtn.classList.add("show");
+      } else {
+        scrollBtn.classList.remove("show");
+      }
+    });
 
-// Smooth scroll to top on click
-scrollBtn.addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
-</script>
+    // Smooth scroll to top on click
+    scrollBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
 
-<script>
-  let timer;
-  const logo = document.getElementById('logo');
+  <script>
+    let timer;
+    const logo = document.getElementById("logo");
 
-  logo.addEventListener('touchstart', () => {
-    timer = setTimeout(() => {
-      alert("You found the secret writer's ink! ✒️💫");
-    }, 2000);
-  });
+    logo.addEventListener("touchstart", () => {
+      timer = setTimeout(() => {
+        alert("You found the secret writer's ink! ✒️💫");
+      }, 2000);
+    });
 
-  logo.addEventListener('touchend', () => clearTimeout(timer));
-</script>
-
+    logo.addEventListener("touchend", () => clearTimeout(timer));
+  </script>
 </body>
 </html>
