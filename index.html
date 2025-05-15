@@ -77,6 +77,29 @@
     <textarea placeholder="Your Message" rows="5" required></textarea>
     <button type="submit">Send</button>
   </form>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    
+    const form = e.target;
+    const data = {
+      name: form.name.value,
+      email: form.email.value,
+      message: form.message.value
+    };
+
+    fetch("https://your-backend-or-form-service.url", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+    })
+    .then(res => res.json())
+    .then(data => alert("Success!"))
+    .catch(err => alert("Error: " + err));
+  });
+</script>
+
 </section>
 
 <section class="testimonial-section">
