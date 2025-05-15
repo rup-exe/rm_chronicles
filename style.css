@@ -1,0 +1,413 @@
+/* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  overflow-x: hidden;  /* ✅ Prevent side scroll */
+  min-height: 100vh;   /* ✅ Ensures full page height */
+  color: #333;
+  line-height: 1.6;
+}
+main {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.books {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Header */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+nav a {
+  margin: 0 15px;
+  color: #ccc;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #fff;
+}
+
+/* Intro Section */
+.intro {
+  padding: 50px;
+  text-align: center;
+}
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 15px 10px;
+  
+}
+header .logo {
+  width: 50px;  /* Adjust the size */
+  height: auto;
+  margin-right: 20px; /* Space between logo and name */
+  vertical-align: middle;
+}
+.book-card {
+  width: 90%;
+  max-width: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+}
+.book-card img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
+}
+.book-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.book-link:hover .book-card {
+  transform: scale(1.02);
+  transition: transform 0.2s ease-in-out;
+}
+
+.about {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.contact {
+  background: #f9f9f9;
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  resize: none;
+}
+
+.contact button {
+  padding: 1rem 2rem;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact button:hover {
+  background: #333;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.testimonial-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 50px 30px;
+  background-color: #f9f9f9;
+}
+
+.testimonial-section h2 {
+  margin-right: 50px;
+  font-size: 1.8rem;
+  color: #222;
+}
+
+.testimonial-box {
+  width: 350px;
+  background-color: #fff;
+  padding: 25px 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial {
+  display: none;
+  text-align: left;
+}
+
+.testimonial.active {
+  display: block;
+}
+
+.testimonial p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.testimonial span {
+  display: block;
+  font-weight: bold;
+  color: #777;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .testimonial-section {
+    align-items: center;
+  }
+
+  .testimonial-box {
+    width: 90%;
+  }
+
+  .testimonial-section h2 {
+    margin: 0 auto 20px;
+  }
+}
+
+.about-section {
+  padding: 60px 20px;
+  background-color: #f7f7f7;
+  color: #222;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.ig-link {
+  color: #c13584;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.ig-link:hover {
+  text-decoration: underline;
+}
+
+.testimonial {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 250px;
+  background: #fff;
+  padding: 1rem;
+  border-left: 4px solid #ff4081;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transform: translateX(50px);
+  animation: slideInRight 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-box {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+    transform: none;
+    animation: none;
+  }
+}
+
+.testimonial-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.insta-plug {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+
+.insta-plug a {
+  color: #d63384;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.insta-plug a:hover {
+  color: #b0256c;
+}
+
+.insta-plug i {
+  margin-right: 0.5rem;
+}
+
+.floating-email {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  background: white;
+  padding: 10px 14px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.floating-email:hover {
+  background: #ffccf3;
+  transform: scale(1.1);
+}
+
+.floating-instagram {
+  position: fixed;
+  bottom: 100px; /* slightly above the email */
+  right: 20px;
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.floating-instagram:hover {
+  transform: scale(1.15);
+  filter: brightness(1.2);
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;       /* distance from bottom */
+  left: 20px;         /* distance from left */
+  z-index: 1000;      /* on top of everything */
+  background-color: #3b82f6; /*colour*/
+  border: none;
+  border-radius: 50%;
+  padding: 12px 16px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: none; /* hidden initially */
+}
+
+/* Show button when scrolling down */
+#scrollToTopBtn.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navigation buttons look stacked? Add spacing */
+nav a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 1rem;
+}
+
+/* Body padding + readable size */
+body {
+  padding: 10px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Optional: Center logo if needed */
+.logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px;
+}
+
+@media (max-width: 768px) {
+  .some-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
